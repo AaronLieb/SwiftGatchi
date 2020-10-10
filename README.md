@@ -1,6 +1,6 @@
 # SwiftGotchi
 
-A description of this package.
+A simple Tamagotchi pet command line application using Swift
 
 # Install
 
