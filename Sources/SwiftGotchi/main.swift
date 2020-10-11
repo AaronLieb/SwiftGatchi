@@ -47,16 +47,15 @@ class Pet {
 		display()
 		if (hunger <= 0) { die() }
 	}
-
-	func feed() {
+func feed() {
 		hunger += 0.2
 	}
-
-	func display() {
+func display() {
 		let num = Int(hunger/0.1)
 		//let str = String(repeating: "+", count: num)
-		//print("\(str)\r", terminator: "")
-		print("\033[A" + "Hunger: \(hunger)\r")
+		print("\rHunger: \(hunger)              ", terminator:"")
+		fflush(stdout)
+		print("\u{33}[2K;")
 	}
 
 	func die() {
